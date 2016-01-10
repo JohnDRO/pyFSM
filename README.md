@@ -1,5 +1,5 @@
 # pyFSM
-Converts an FSM (described into a JSON file) into synthesizable code (HDL).
+Converts a FSM (described into a JSON file) into synthesizable code (HDL).
 
 Here is an basic FSM example : 
 
