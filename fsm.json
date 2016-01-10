@@ -1,0 +1,45 @@
+[{
+	"Name": "BasicFSM",
+	"InitalState": "State1",
+	"Modules": {
+		"Inputs": {
+			"a": {
+				"type": "std_logic"
+			},
+			"b": {
+				"type": "std_logic"
+			}
+		},
+		"Outputs": {
+			"c": {
+				"type": "std_logic"
+			}
+		},
+		"States": {
+			"State1": {
+				"Transition": {
+					"State2": {
+					"condition": "a = '1'"
+					}
+				},
+				"OutputState": {
+					"c": {
+					"state": "'0'"
+					}
+				}
+			},
+			"State2": {
+				"Transition": {
+					"State1": {
+					"condition": "b = '0'"
+					}
+				},
+				"OutputState": {
+					"c": {
+					"state": "'1'"
+					}
+				}
+			}
+		}
+	}
+}]
